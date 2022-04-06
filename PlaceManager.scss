@@ -1,0 +1,41 @@
+﻿PlaceManager {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	pointer-events: all;
+	background-color: black;
+
+	.label-container {
+		position: absolute;
+		flex-direction: column;
+		font-family: 'Segoe UI';
+		font-size: 36px;
+		color: white;
+		left: 0;
+		bottom: 0;
+		background-color: black;
+		padding: 5px 5px;
+		box-shadow: 0 0 10px black;
+
+		.timescale {
+			color: red;
+
+			&.manual {
+				color: yellow;
+			}
+
+			&.autoplay {
+				color: green;
+			}
+		}
+	}
+
+	.image {
+		image-rendering: pixelated;
+		width: 1001px;
+		height: 1001px;
+		pointer-events: none;
+	}
+}
